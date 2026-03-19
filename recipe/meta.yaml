@@ -1,5 +1,5 @@
 {% set name = "tardigrade_stress_tools" %}
-{% set version = "0.6.3" %}
+{% set version = "0.6.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/UCBoulder/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: ef983cbe1c92090f99dc8c594c8a2cb5b0702612f81f8887f84892a394d584e5
+  sha256: 0d4a40b46fba12a4fc5840caa39341a8b0092b72c68913f593d1f050dc811fe1
 
 build:
-  number: 1
+  number: 0
   script_env:
     - SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
   script:
@@ -46,6 +46,7 @@ requirements:
     - setuptools >=77
     - setuptools_scm >=8
     - eigen >=3.3.7
+    - eigen-abi-devel
     - tardigrade_error_tools >=0.9.8
     - tardigrade_vector_tools >=0.8.7
     - tardigrade_constitutive_tools >=0.8.5
