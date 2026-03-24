@@ -10,7 +10,7 @@ source:
   sha256: 0d4a40b46fba12a4fc5840caa39341a8b0092b72c68913f593d1f050dc811fe1
 
 build:
-  number: 1
+  number: 2
   script_env:
     - SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
   script:
@@ -49,7 +49,7 @@ requirements:
     - eigen-abi-devel
     - tardigrade_error_tools >=0.9.8
     - tardigrade_vector_tools >=0.8.7
-    - tardigrade_constitutive_tools >=0.8.5
+    - tardigrade_constitutive_tools >=0.8.7
   run:
     - eigen >=3.3.7
 
