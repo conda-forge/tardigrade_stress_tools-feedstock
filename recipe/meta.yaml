@@ -1,5 +1,5 @@
 {% set name = "tardigrade_stress_tools" %}
-{% set version = "0.6.4" %}
+{% set version = "0.6.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/UCBoulder/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 0d4a40b46fba12a4fc5840caa39341a8b0092b72c68913f593d1f050dc811fe1
+  sha256: b90b423ff18e683be1d462f843b06c44bc00ac352f33e987437fc422302ac2cc
 
 build:
-  number: 2
+  number: 0
   script_env:
     - SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
   script:
